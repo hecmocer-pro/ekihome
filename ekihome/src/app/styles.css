@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Section landing */
+.landing-video-container {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    transform: scaleY(-1);
+}
+
+.landing-video {
+    position: relative;
+    bottom: 0;
+    transform: scaleY(-1);
+}
+
+/* Section marketing text */
+.marketing-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0 20vw;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.text-container h3 {
+    font-size: 24px;
+}
+
+/* section pictures */
+.pictures-container {
+    display: grid;
+    width: 100vh;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image1 {
+    background: url('/horse1.jpg');
+    background-size: cover;
+}
+
+.image2 {
+    background: url('/horse2.jpg');
+    background-size: cover;
+}
+
+.image3 {
+    background: url('/horse3.jpg');
+    background-size: cover;
+}
