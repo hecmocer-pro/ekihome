@@ -22,7 +22,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd;
+    background-color: #0e0e0e;
     color: black;
     display: flex;
     justify-content: center;
@@ -30,6 +30,7 @@ body {
 
 .pageframe {
     max-width: 1920px;
+    background: #fdfdfd;
 }
 
 /* Section navbar */
@@ -207,11 +208,46 @@ body {
 
 /* section waitlist */
 #waitlist {
-    height: 800px;
+    height: 600px;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+}
+
+.waitlist-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: solid 2px black;
+    padding: 60px 40px;
+    margin: 8px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.waitlist-title {
+    font-size: 48px;
+    /* font-family: 'Intuitive', sans-serif; */
+    font-family: 'congenial', sans-serif;
+    text-align: center;
+}
+
+.waitlist-main {
+    font-size: 24px;
+    max-width: 400px;
+    margin: 16px 0 24px 0;
+    text-align: center;
+}
+
+.waitlist-button {
+    color: white;
+    text-decoration: none;
 }
 
 /* section summary */
