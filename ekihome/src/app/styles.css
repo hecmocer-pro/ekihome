@@ -1,50 +1,173 @@
+@font-face {
+    font-family: 'Intuitive';
+    src: url('/Intuitive.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'congenial';
+    src: url('/congenial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #bd6500;
+    text-decoration: underline;
+}
+
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fdfdfd;
     color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.pageframe {
+    max-width: 1920px;
+}
+
+/* Section navbar */
+.header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.ekihome-text {
+    font-family: 'Intuitive', sans-serif;
+    font-size: 32px;
+    margin-left: 12px;
+    line-height: 1;
+}
+
+.ekihome-subtext {
+    font-family: 'congenial', sans-serif;
+    font-size: 18px;
+    margin-left: 12px;
+    line-height: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: end;
+    padding-left: 24px;
+    margin-top: 8px;
+    width: 80%;
+    padding-bottom: 4px;
+    border-bottom: solid 1px black;
+}
+
+.ekihome-logo {
+    height: 64px;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    padding: 0 8px
 }
 
 /* Section landing */
 .landing-video-container {
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    /* max-height: 800px; */
     overflow: hidden;
-    transform: scaleY(-1);
 }
 
-.landing-video {
-    position: relative;
-    bottom: 0;
-    transform: scaleY(-1);
+/* Section secondary video */
+.secondary-video-container {
+    width: 100%;
+    /* max-height: 500px; */
+    overflow: hidden;
 }
 
-/* Section marketing text */
-.marketing-container {
+/* Section intro text */
+#intro {}
+
+.intro-container {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    align-items: center;
+    background-color: #db7500;
     color: white;
-    padding: 0 20vw;
+    padding: 50px 18vw;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    max-width: 200px;
+    text-align: center;
 }
 
 .text-container h3 {
     font-size: 24px;
+    padding-bottom: 24px;
+    line-height: 1.2;
 }
 
+@media (max-width: 1000px) {
+    .intro-container {
+        padding: 50px 10vw;
+    }
+
+    .text-container {
+        max-width: 280px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro-container {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+}
+
+/* Section Opinions */
+.opinions-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #db7500;
+    color: white;
+    padding: 50px 15vw;
+}
+
+.opinions-container h3 {
+    font-size: 24px;
+    padding-bottom: 24px;
+    line-height: 1.2;
+}
+
+.opinion {
+    padding-bottom: 24px;
+}
+
+@media (max-width: 800px) {
+    .opinions-container {
+        flex-direction: column;
+    }
+
+}
+
+
 /* section pictures */
+#pictures {}
+
 .pictures-container {
     display: grid;
-    width: 100vh;
-    height: 300px;
+    height: 400px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -61,4 +184,61 @@ body {
 .image3 {
     background: url('/horse3.jpg');
     background-size: cover;
+}
+
+@media (max-width: 800px) {
+    .pictures-container {
+        grid-template-columns: 1fr;
+    }
+
+    .image2 {
+        display: none;
+    }
+
+    .image3 {
+        display: none;
+    }
+}
+
+/* section waitlist */
+#waitlist {
+    height: 800px;
+}
+
+/* section summary */
+#summary {
+    font-family: 'congenial', sans-serif;
+    background-color: #db7500;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section footer */
+#footer {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copyright {
+    padding-bottom: 24px;
+    display: flex;
+}
+
+.logo {
+    width: 24px;
+}
+
+
+@media (max-width: 800px) {
+    .copyright {
+        flex-direction: column;
+    }
+
 }
