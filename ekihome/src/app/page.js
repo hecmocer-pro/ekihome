@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.css';
-import Button from '@mui/material/Button';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -84,10 +83,11 @@ function App() {
           </section>
           <section id="waitlist">
             <h1>Únete a la lista de espera</h1>
-            {/* <Button variant="contained">Waitlist</Button> */}
+            <p>Estamos aceptando peticiones para reserva de box con prado de 200 metros cuadrados</p>
+            <button>Lista de espera</button>
           </section>
           <section id="summary">
-            <p>El hogar para <u>tu caballo y tú</u></p>
+            <p className="summary-text">El hogar para <u>tu caballo y tú</u></p>
           </section>
         </main>
         <footer id="footer">

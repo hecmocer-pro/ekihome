@@ -63,7 +63,8 @@ body {
     margin-top: 8px;
     width: 80%;
     padding-bottom: 4px;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #db7500;
+    color: #db7500;
 }
 
 .ekihome-logo {
@@ -101,7 +102,7 @@ body {
     align-items: center;
     background-color: #db7500;
     color: white;
-    padding: 50px 18vw;
+    padding: 80px 18vw;
 }
 
 .text-container {
@@ -119,7 +120,7 @@ body {
 
 @media (max-width: 1000px) {
     .intro-container {
-        padding: 50px 10vw;
+        padding: 40px 10vw;
     }
 
     .text-container {
@@ -131,7 +132,7 @@ body {
 @media (max-width: 800px) {
     .intro-container {
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 40px 20px;
     }
 }
 
@@ -141,17 +142,21 @@ body {
     justify-content: space-between;
     background-color: #db7500;
     color: white;
-    padding: 50px 15vw;
+    padding: 74px 15vw 60px 15vw;
 }
 
 .opinions-container h3 {
     font-size: 24px;
-    padding-bottom: 24px;
+    padding-top: 12px;
     line-height: 1.2;
+    padding-right: 32px;
 }
 
 .opinion {
-    padding-bottom: 24px;
+    padding: 4px 16px;
+    margin: 8px 0 32px;
+    max-width: 800px;
+    border-left: solid 1px white;
 }
 
 @media (max-width: 800px) {
@@ -203,6 +208,10 @@ body {
 /* section waitlist */
 #waitlist {
     height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* section summary */
@@ -217,6 +226,10 @@ body {
     align-items: center;
 }
 
+.summary-text {
+    text-align: center;
+}
+
 /* section footer */
 #footer {
     display: flex;
@@ -229,6 +242,7 @@ body {
 .copyright {
     padding-bottom: 24px;
     display: flex;
+    text-align: center;
 }
 
 .logo {
